@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_change_settings"
+        android:title="@string/change_language_setting"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/darkMode"
+        app:actionViewClass="com.google.android.material.switchmaterial.SwitchMaterial"
+        app:showAsAction="always"
+        android:title="@string/dark_mode" />
+    <item
+        android:id="@+id/favorite_user"
+        android:icon="@drawable/ic_star_grey"
+        android:title="@string/favorite_user"
+        app:showAsAction="ifRoom"/>
+
+
+
+
+</menu>

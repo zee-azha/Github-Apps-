@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Github user</string>
+<string name="username">Nama Pengguna: </string>
+<string name="name">Nama: </string>
+<string name="location">Lokasi</string>
+<string name="repository">Gudang</string>
+<string name="company">Perusahaan</string>
+<string name="followers">Pengikut</string>
+<string name="following">Mengikuti</string>
+<string name="avatar">Avatar</string>
+<string name="change_language_setting">Pengaturan ganti bahasa</string>
+<string name="Search">Mencari nama pengguna</string>
+<string name="favorite_user">Pengguna Favorit</string>
+<string name="toggle_button">Tombol favorit</string>
+<string name="insert_data">Pengguna favorit berhasil ditambahkan</string>
+<string name="delete_data">Pengguna favorit berhasil dihapus</string>
+    <string name="dark_mode">Mode Gelap</string>
+</resources>

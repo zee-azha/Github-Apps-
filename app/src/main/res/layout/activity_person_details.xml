@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/WhiteLikeMyfuture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PersonDetails">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:contentDescription="@string/avatar"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/IhateBlackReally"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        tools:text="@string/name"
+        app:layout_constraintStart_toStartOf="@id/img_avatar"
+        app:layout_constraintTop_toBottomOf="@id/img_avatar"
+        app:layout_constraintEnd_toEndOf="@id/img_avatar"/>
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/IhateBlackReally"
+        android:textSize="15sp"
+        tools:text="@string/username"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintEnd_toEndOf="@id/tv_name"/>
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="26dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/location"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/baseline_place_black_24"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/tv_location" />
+
+    <ImageView
+        android:id="@+id/company"
+        android:layout_width="26dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/company"
+        android:src="@drawable/baseline_apartment_black_24"
+        app:layout_constraintBottom_toTopOf="@+id/tv_location"
+        app:layout_constraintEnd_toStartOf="@+id/tv_company" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/IhateBlackReally"
+        android:textSize="15sp"
+        tools:text="@string/company"
+        app:layout_constraintStart_toStartOf="@id/tv_username"
+        app:layout_constraintTop_toBottomOf="@id/tv_username"
+        app:layout_constraintEnd_toEndOf="@id/tv_username"/>
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/IhateBlackReally"
+        android:textSize="15sp"
+        tools:text="@string/location"
+        app:layout_constraintStart_toStartOf="@id/tv_company"
+        app:layout_constraintTop_toBottomOf="@id/tv_company"
+        app:layout_constraintEnd_toEndOf="@id/tv_company"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/tv_location"
+        app:layout_constraintStart_toStartOf="@+id/tv_location"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location">
+
+        <TextView
+            android:id="@+id/tv_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/IhateBlackReally"
+            android:textSize="15sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginEnd="6dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:text="@string/followers" />
+
+        <TextView
+            android:id="@+id/tv_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/IhateBlackReally"
+            android:textSize="15sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginEnd="6dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:text="@string/following" />
+
+        <TextView
+            android:id="@+id/tv_repository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:textColor="@color/IhateBlackReally"
+            android:textSize="15sp"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/repository"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp"
+            android:text="@string/repository" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="24dp"
+        android:background="@color/WhiteLikeMyfuture"
+        android:minHeight="?actionBarSize"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabRippleColor="@color/IhateBlackReally"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="450dp"
+        android:background="@color/WhiteLikeMyfuture"
+        app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+    <ToggleButton
+        android:id="@+id/favorite_toggle"
+        android:layout_width="45dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/favorite_toggle"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="@string/toggle_button"
+        android:textOff=""
+        android:textOn=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

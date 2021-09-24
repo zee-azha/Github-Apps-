@@ -12,9 +12,8 @@
         android:title="@string/dark_mode" />
     <item
         android:id="@+id/favorite_user"
-        android:icon="@drawable/ic_star_grey"
         android:title="@string/favorite_user"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="Never"/>
 
 
 

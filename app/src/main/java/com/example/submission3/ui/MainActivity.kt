@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intentWithExtraData)
     }
 
-    @SuppressLint("ResourceAsColor")
+    
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.option_menu, menu)
         val switchTheme = menu.findItem(R.id.darkMode).actionView as SwitchMaterial
@@ -128,8 +128,7 @@ class MainActivity : AppCompatActivity() {
             { isDarkModeActive: Boolean ->
                 if (isDarkModeActive) {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-                    binding.searchView.setBackgroundColor(R.color.IhateBlackReally)
-                    favoriteButton.setIcon(R.drawable.ic_star_yellow)
+                    binding.searchView.setBackgroundColor(Color.GREY)
                     switchTheme.isChecked = true
                 } else {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
